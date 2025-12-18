@@ -8,6 +8,8 @@ RUNNING PROCESSES - things that will run every frame
 
 //Import Code From Other JS Modules
 //Sound functions and classes
+Tone.setContext(new Tone.Context({ sampleRate: 44100 }));
+
 import {
   wallSound,
   paddleSound,
