@@ -11,14 +11,14 @@ body {
 #game {
   margin: 4px;
   border: 5px solid black;
-  left: 300;
-  position: absolute;
+  left: 0;
+  position: center;
   background-image: url("fish.gif");
   background-size: cover;
 }
 
 #left-paddle {
-  background-color: yellow;
+  background-color: black;
   left: 10px;
   height: 25px;
 }
@@ -77,7 +77,7 @@ body {
 .ball {
   width: 15px;
   height: 15px;
-  background-color: yellow;
+  background-color: white;
   border-radius: 10px;
   position: absolute;
   left: 50px;
@@ -88,7 +88,7 @@ body {
   display: block;
   position: absolute;
   font-family: Arial, Helvetica, sans-serif;
-  color: red;
+  color: black;
   top: 0;
 }
 
