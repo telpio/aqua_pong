@@ -66,8 +66,17 @@ paddleArray.push(paddleRight);
 paddlesReset();
 //END OF GAME OBJECTS///
 
-//STARTUP EVENTS
-ambientSound.play();
+//STARTUP EVENTS - now waits for user interaction to unlock audio
+document.addEventListener("click", () => {
+  // Unlock Chrome audio
+  Tone.start();
+
+  // Play ambient sound normally
+  ambientSound.player.loop = true;
+  ambientSound.player.volume.value = -20;
+  ambientSound.player.playbackRate = 1;
+  ambientSound.play();
+}, { once: true }); // only run on the first click
 
 //RUNNING PROCESSES (updated every frame of the game)
 function gameProcess() {
