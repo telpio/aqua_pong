@@ -9,10 +9,11 @@ body {
   margin: 0;
 }
 #game {
-  margin: 4px;
-  border: 6px solid black;
-  left: 0;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 6px solid black;
   background-image: url("fish.gif");
   background-size: cover;
 }
